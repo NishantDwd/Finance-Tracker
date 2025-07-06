@@ -13,7 +13,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://finance-tracker-frontend-rxcv.onrender.com"
+    "https://finance-tracker-frontend-rxcv.onrender.com",
+    "https://finance-tracker-sandy-six.vercel.app/"
   ]
 }));
 
