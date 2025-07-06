@@ -10,7 +10,13 @@ const analyticsRoutes = require('./routes/analyticsRoutes');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://finance-tracker-frontend-rxcv.onrender.com"
+  ]
+}));
+
 app.use(express.json());
 
 // MongoDB Connection
